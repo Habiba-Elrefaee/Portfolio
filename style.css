@@ -1,0 +1,106 @@
+/* Font Styles */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+    opacity: 0;
+}
+
+.animate-fade-in.visible {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+    opacity: 0;
+}
+
+.animate-slide-up.visible {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+    .md\\:hidden {
+        display: block;
+    }
+    #mobile-menu {
+        display: none;
+    }
+    #mobile-menu:not(.hidden) {
+        display: block;
+    }
+    .grid-cols-2, .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 4xl;
+    }
+    h2 {
+        font-size: 3xl;
+    }
+}
+
+/* Hover and Transition Effects */
+.transform {
+    transition: all 0.3s ease-out;
+}
+
+.hover\\:-translate-y-2:hover {
+    transform: translateY(-0.5rem);
+}
+
+.hover\\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+/* General Styling */
+.parallax-bg {
+    transition: transform 0.1s ease-out;
+}
+
+.bg-white\/50 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-white\/80 {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-white\/90 {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%239B59B6" /><stop offset="100%" style="stop-color:%2343A047" /></linearGradient><polygon points="12,2 14.7,9.3 22,9.3 16.3,14.7 18.7,22 12,17.7 5.3,22 7.7,14.7 2,9.3 9.3,9.3" fill="url(%23grad1)" /></svg>') no-repeat center;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+    transition: transform 0.2s ease-out;
+}
+
+.custom-cursor.cursor-hover {
+    transform: scale(1.2);
+}
