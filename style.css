@@ -104,3 +104,17 @@
 .custom-cursor.cursor-hover {
     transform: scale(1.2);
 }
+
+/* Professional Bullet Styles */
+#skills ul li {
+    position: relative;
+    padding-left: 1.5rem; /* Space for bullet */
+}
+
+#skills ul li::before {
+    content: "•"; /* Professional circle bullet */
+    position: absolute;
+    left: 0;
+    color: #edc0ff; /* Matches purple-600 from palette */
+    font-size: 1em;
+}
