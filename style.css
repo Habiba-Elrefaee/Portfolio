@@ -74,21 +74,7 @@
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Custom Cursor */
-.custom-cursor {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%239B59B6" /><stop offset="100%" style="stop-color:%2343A047" /></linearGradient><polygon points="12,2 14.7,9.3 22,9.3 16.3,14.7 18.7,22 12,17.7 5.3,22 7.7,14.7 2,9.3 9.3,9.3" fill="url(%23grad1)" /></svg>') no-repeat center;
-    pointer-events: none;
-    z-index: 9999;
-    display: none;
-    transition: transform 0.2s ease-out;
-}
 
-.custom-cursor.cursor-hover {
-    transform: scale(1.2);
-}
 
 /* Professional Bullet Styles */
 #skills ul li {
@@ -346,7 +332,7 @@ body.dark .hover\:text-blue-700:hover {
 body.dark input,
 body.dark textarea {
     color: #f1f5f9; /* Slate-100, very light color for good contrast */
-    background-color: rgba(30, 41, 59, 0.95); /* Slightly darker than card background */
+    background-color: rgba(48, 30, 59, 0.95); /* Slightly darker than card background */
     border-color: #e4e0e9; /* Dark purple for border */
 }
 
@@ -396,7 +382,7 @@ body.dark textarea:focus {
 /* Dark mode card borders */
 body.dark #skills .bg-white,
 body.dark #projects .group {
-    border: 1px solid rgba(255, 255, 255, 0.642);
+    border: 2px solid rgba(255, 255, 255, 0.307);
 }
 
 body.dark #skills .bg-white:hover,
@@ -406,19 +392,19 @@ body.dark #projects .group:hover {
 
 /* About section card border */
 #about .bg-white\/80 {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.732);
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 #about .bg-white\/80:hover {
-    border-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.666);
 }
 
 /* Dark mode about section card border */
 body.dark #about .bg-white\/80 {
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.322);
 }
 
 body.dark #about .bg-white\/80:hover {
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.76);
 }
