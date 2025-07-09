@@ -380,3 +380,26 @@ body.dark textarea:focus {
 .dark .sun-and-moon > .moon > circle {
     transform: translateX(7px);
 }
+
+/* Skill and Project Cards Styling */
+#skills .bg-white,
+#projects .group {
+    border: 2px solid rgba(255, 255, 255, 0.467);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+#skills .bg-white:hover,
+#projects .group:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Dark mode card borders */
+body.dark #skills .bg-white,
+body.dark #projects .group {
+    border: 1px solid rgba(255, 255, 255, 0.642);
+}
+
+body.dark #skills .bg-white:hover,
+body.dark #projects .group:hover {
+    border-color: rgba(255, 255, 255, 0.712);
+}
