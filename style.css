@@ -347,7 +347,7 @@ body.dark input,
 body.dark textarea {
     color: #f1f5f9; /* Slate-100, very light color for good contrast */
     background-color: rgba(30, 41, 59, 0.95); /* Slightly darker than card background */
-    border-color: #4c1d95; /* Dark purple for border */
+    border-color: #e4e0e9; /* Dark purple for border */
 }
 
 body.dark input::placeholder,
@@ -402,4 +402,23 @@ body.dark #projects .group {
 body.dark #skills .bg-white:hover,
 body.dark #projects .group:hover {
     border-color: rgba(255, 255, 255, 0.712);
+}
+
+/* About section card border */
+#about .bg-white\/80 {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+#about .bg-white\/80:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Dark mode about section card border */
+body.dark #about .bg-white\/80 {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.dark #about .bg-white\/80:hover {
+    border-color: rgba(255, 255, 255, 0.3);
 }
