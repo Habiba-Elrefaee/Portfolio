@@ -17,8 +17,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="text-3xl font-playfair text-purple-700">My Portfolio</div>
-                <!-- Menu Button - Positioned on the right -->
-                <div class="flex items-center">
+                <!-- Dark mode toggle and menu buttons -->
+                <div class="flex items-center space-x-4">
+                    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                            <mask class="moon" id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+                                <circle cx="12" cy="12" r="6" fill="black"/>
+                            </mask>
+                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor"/>
+                            <g class="sun-beams" stroke="currentColor">
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </g>
+                        </svg>
+                    </button>
                     <button id="hamburger-menu" class="menu-toggle relative z-50" aria-label="Menu">
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
@@ -131,14 +150,14 @@
                     <div class="h-48 bg-[url('welcome-page.png')] bg-cover bg-center"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-purple-700">Internship Management System</h3>
-                        <p class="text-blue-900">Web platform built as part of a Software Engineering course to manage internship processes. Contributed to frontend and backend development using Next.js and Tailwind CSS, and implemented key features like dashboards and authentication. Collaborated in a team using Agile methodologies and Git for version control.<br><br> GitHub Repository: <a href="https://github.com/CSEN603-2025/Ctrl-Alt-Defeat" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">https://github.com/CSEN603-2025/Ctrl-Alt-Defeat</a></p>
+                        <p class="text-blue-900">Web platform built as part of a Software Engineering course to manage internship processes. Contributed to frontend and backend development using Next.js and Tailwind CSS, and implemented key features like dashboards and authentication. Collaborated in a team using Agile methodologies and Git for version control.<br><br> GitHub Repository: <a href="https://github.com/CSEN603-2025/Ctrl-Alt-Defeat" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">https://github.com/CSEN603-2025/Ctrl-Alt-Defeat</a> <br><br>LinkedIn post link: <a href="" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer"><br>Internship Management System</a></p>
                     </div>
                 </div>
                 <div class="group bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                     <div class="h-48 bg-[url('image.png')] bg-cover bg-center"></div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-purple-700">Scheduling Simulator</h3>
-                        <p class="text-blue-900">The Operating Systems Project involved designing a process scheduling simulator using C and POSIX threads, focusing on a multi-level queue algorithm to optimize resource allocation. Collaborating with a team, I contributed to implementing core scheduling logic and testing.<br><br>GitHub Repository: <a href="https://github.com/sal-tarek/OperatingSystems" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">https://github.com/sal-tarek/OperatingSystems</a></p>                    
+                        <p class="text-blue-900">The Operating Systems Project involved designing a process scheduling simulator using C and POSIX threads, focusing on a multi-level queue algorithm to optimize resource allocation. Collaborating with a team, I contributed to implementing core scheduling logic and testing.<br><br><br><br>GitHub Repository: <a href="https://github.com/sal-tarek/OperatingSystems" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">https://github.com/sal-tarek/OperatingSystems</a> <br><br> LinkedIn post link: <a href="https://www.linkedin.com/posts/habiba-mahmoud-7h19i20b04_operatingsystems-virtualmemory-systemsprogramming-activity-7331715235633885184-QmL5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpQMUsB5_6jbmwlfk7z6gnHIIhCa6udeoM" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer"><br>Scheduling Simulator</a></p>                    
                     <!-- I want the github link to be displayed on one line-->
                     </div>
                 </div>
@@ -148,8 +167,9 @@
                         <h3 class="text-xl font-semibold text-purple-700">Smart Study Desk</h3>
                         <p class="text-blue-900">Constructed an interactive Smart Study Desk with automated lighting, motion-triggered drawer access, and
                             real-time study tracking. Utilized VHDL programming with IR sensors, LDR, servo motors, and 7-segment displays for a seamless
-                            user experience.</p>
-                    </div>
+                            user experience.<br><br><br><br><br><br><br><br>LinkedIn post link: <a href="https://www.linkedin.com/posts/habiba-mahmoud-7h19i20b04_smartstudydesk-innovation-fpga-activity-7286470996071473152-ejyg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpQMUsB5_6jbmwlfk7z6gnHIIhCa6udeoM" class="text-blue-900 hover:underline hover:text-blue-700" target="_blank" rel="noopener noreferrer"><br>Smart Study Desk</a></p>
+                        <!-- I want the linkedin post to have a specific name not that long link-->
+                        </div>
                 </div>
             </div>
         </div>
@@ -262,6 +282,30 @@
                 mobileMenu.classList.add('hidden');
                 mobileMenu.classList.remove('active');
             });
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            // Save to localStorage
+            if (body.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Check for saved theme in localStorage
+        window.addEventListener('load', () => {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                body.classList.add('dark');
+            } else {
+                body.classList.remove('dark');
+            }
         });
     </script>
 </body>
