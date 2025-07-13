@@ -217,27 +217,6 @@
 
     <!-- JavaScript for Smooth Scrolling -->
     <script>
-        function scrollToSection(event) {
-            event.preventDefault(); // Prevent default anchor jump
-            const href = event.target.getAttribute('href');
-            const targetSection = document.querySelector(href);
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        // Add smooth scrolling to all navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', scrollToSection);
-        });
-
-        // Smooth scrolling for Let's Connect button
-        function scrollToContact(event) {
-            event.preventDefault(); // Prevent default anchor jump
-            const contactSection = document.getElementById('contact');
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
-
         // Initialize menu state on page load
         document.addEventListener('DOMContentLoaded', () => {
             const hamburgerMenu = document.getElementById('hamburger-menu');
